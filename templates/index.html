@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="h-screen flex items-center font-roboto-mono">
+        <div class="space-y-5 lg:w-2/3 -mt-[15dvh]">
+            <h1 class="text-3xl md:text-5xl capitalize">sports event and athletes management system</h1>
+            <p class="md:text-xl dark:text-gray-300">this application aims NOPSCCEA to modernize its operations, improve data accuracy, and provide a seamless experience for sports directors, coaches, and student-athletes. </p>
+            <div class="flex flex-col md:flex-row items-center gap-x-3">
+                <h1>Tech used: </h1>
+                <div class="flex gap-x-2">
+                    <img src="{{ url_for('static', filename='images/vue.png') }}" alt="vue js" class="w-8 aspect-square">
+                    <img src="{{ url_for('static', filename='images/node.png') }}" alt="vue js" class="w-8 aspect-square">
+                    <img src="{{ url_for('static', filename='images/ex.png') }}" alt="vue js" class="w-8 aspect-square">
+                    <img src="{{ url_for('static', filename='images/js.png') }}" alt="vue js" class="w-8 aspect-square">
+                    <img src="{{ url_for('static', filename='images/ts.png') }}" alt="vue js" class="w-8 aspect-square">
+                    <img src="{{ url_for('static', filename='images/fb.png') }}" alt="vue js" class="w-7 aspect-square">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-full flex flex-col gap-y-10 font-roboto-mono dark:text-gray-300">
+        <h1 class="text-center text-4xl">Objectives</h1>
+        <div class="flex flex-col md:flex-row gap-10">
+           {% for objective in objectives %}
+            {% set outer_loop = loop %}
+            <div class="border dark:border-gray-500 w-full md:w-1/2 p-5 rounded bg-gray-200 dark:bg-neutral-900 hover:scale-[101%] cursor-default">
+                <div class="space-y-5">
+                    <h1 class="uppercase text-xl font-bold">{{ loop.index }}. {{ objective.objective }}</h1>
+                    <ol class="pl-5 space-y-2">
+                        {% for specific in objective.specificObjectives %}
+                            <li class="text-lg">
+                                {{ outer_loop.index|string + '.' + loop.index|string }} {{ specific }}
+                            </li>
+                        {% endfor %}
+                    </ol>
+                </div>
+            </div>
+           {% endfor %}
+        </div>
+    <!-- <div class="py-10 w-full flex flex-col gap-y-10 font-roboto-mono dark:text-gray-300">
+        <h1 class="text-center text-4xl">System Overview</h1>
+        <div class="flex flex-col gap-y-10">
+            <div class="flex">
+                <div class="w-2/5 space-y-3">
+                    <h1 class="text-xl font-bold tracking-wide">Events lists</h1>
+                    <hr class="border-gray-600 w-5/6">
+                    <p class="w-5/6 text-sm text-gray-400 font-semibold">This is the Sports Events List module for the NOPSSCEA Seasonal Games, showcasing the upcoming seasons and their associated events. The cards represent different seasons of the NOPSSCEA Opening Ceremonies, including the season number, event dates, and a brief description of each event. The Add Event button at the top allows administrators to add new events to the list. Each event card features a "Details" button, which can be clicked to view more information about the event. The module provides an easy-to-navigate interface for managing events and keeping users up-to-date with the latest sports seasons in the NOPSSCEA calendar.</p>
+                </div>
+                <div class="border rounded-xl shadow-white overflow-hidden w-3/5">
+                    <img src="{{ url_for('static', filename='images/events.png') }}" alt="events image w-full aspect-square">
+                </div>
+            </div>
+            <div class="flex gap-x-5">
+                <div class="border rounded-xl shadow-white overflow-hidden w-3/5">
+                    <img src="{{ url_for('static', filename='images/eventDetails.png') }}" alt="events image w-full aspect-square">
+                </div>
+                <div class="w-2/5 space-y-3">
+                    <h1 class="text-xl font-bold tracking-wide">Event Details</h1>
+                    <hr class="border-gray-600 w-5/6">
+                    <p class="w-5/6 text-sm text-gray-400 font-semibold">This is the Sports Events List module for the NOPSSCEA Seasonal Games, showcasing the upcoming seasons and their associated events. The cards represent different seasons of the NOPSSCEA Opening Ceremonies, including the season number, event dates, and a brief description of each event. The Add Event button at the top allows administrators to add new events to the list. Each event card features a "Details" button, which can be clicked to view more information about the event. The module provides an easy-to-navigate interface for managing events and keeping users up-to-date with the latest sports seasons in the NOPSSCEA calendar.</p>
+                </div>
+            </div>
+        </div> -->
+    </div>
+{% endblock %}
+
+{% block script %}
+<script>
+
+</script>
+{% endblock %}

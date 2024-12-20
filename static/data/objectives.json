@@ -1,0 +1,27 @@
+[
+    {
+        "objective": "To design and develop the Sports Events and Athletes Performance Management using digital technology:",
+        "specificObjectives": [
+            "Athlete Profiling Submission",
+            "Submission of Forms",
+            "Athlete Portfolio",
+            "Sports Registration Management",
+            "Sports event management",
+            "Athlete Performance Report",
+            "Provide Reporting Capabilities"
+        ]
+    },
+    {
+        "objective": "To evaluate the system using ISO standardize questionnaire tool in terms of:",
+        "specificObjectives": [
+            "Functional Suitability",
+            "Reliability",
+            "Performance Efficiency",
+            "Usability",
+            "Security",
+            "Compatibility",
+            "Maintainability",
+            "Portability"
+        ]
+    }
+]

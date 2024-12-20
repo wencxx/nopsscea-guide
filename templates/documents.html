@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="h-full flex pt-20 font-roboto-mono pb-10">
+        <div class="space-y-20 w-full">
+            <h1 class="text-5xl capitalize">Documents</h1>
+            <div class="grid grid-cols-3">
+                <div class="border h-96 border-gray-600 p-7 flex flex-col justify-between">
+                    <h1 class="text-2xl">Chapter 01</h1>
+                    <h2 class="text-xl">Introduction</h2>
+                    <p class="dark:text-gray-300">Introduction serves as the foundation of the capstone project, providing an overview of the study and setting the context for the entire work. It establishes the relevance and importance of the project while introducing the problem, objectives, and scope</p>
+                    <div class="flex items-center gap-x-3">
+                        <a href="{{ url_for('static', filename='docs/docs.pdf') }}" target="_blank">
+                            <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M340.67-440.67h38v-82H424q16.15 0 27.07-10.92Q462-544.52 462-560.67V-606q0-16.15-10.93-27.07Q440.15-644 424-644h-83.33v203.33Zm38-120V-606H424v45.33h-45.33Zm126 120h82.66q15.67 0 26.84-10.92 11.16-10.93 11.16-27.08V-606q0-16.15-11.16-27.07Q603-644 587.33-644h-82.66v203.33Zm38-38V-606h44.66v127.33h-44.66Zm128.66 38h38v-82H756v-38h-46.67V-606H756v-38h-84.67v203.33ZM280-213.33q-27 0-46.83-19.84Q213.33-253 213.33-280v-533.33q0-27 19.84-46.84Q253-880 280-880h533.33q27 0 46.84 19.83Q880-840.33 880-813.33V-280q0 27-19.83 46.83-19.84 19.84-46.84 19.84H280Zm0-66.67h533.33v-533.33H280V-280ZM146.67-80q-27 0-46.84-19.83Q80-119.67 80-146.67v-600h66.67v600h600V-80h-600ZM280-813.33V-280v-533.33Z"/></svg>
+                        </a>
+                        <a href="{{ url_for('static', filename='docs/docs.pdf') }}" download="lamba_chapter1.pdf">
+                            <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="border-t border-b h-96 border-gray-600 p-7 flex flex-col justify-between">
+                    <h1 class="text-2xl">Chapter 02</h1>
+                    <h2 class="text-xl">Review of Related Literature and Studies</h2>
+                    <p class="dark:text-gray-300">Chapter 2 of the capstone project reviews existing literature and studies related to the topic. It places the current research within the context of prior work, showing how it connects to and supports the project.</p>
+                    <div class="flex items-center gap-x-3">
+                        <a href="{{ url_for('static', filename='docs/docs.pdf') }}" target="_blank">
+                            <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M340.67-440.67h38v-82H424q16.15 0 27.07-10.92Q462-544.52 462-560.67V-606q0-16.15-10.93-27.07Q440.15-644 424-644h-83.33v203.33Zm38-120V-606H424v45.33h-45.33Zm126 120h82.66q15.67 0 26.84-10.92 11.16-10.93 11.16-27.08V-606q0-16.15-11.16-27.07Q603-644 587.33-644h-82.66v203.33Zm38-38V-606h44.66v127.33h-44.66Zm128.66 38h38v-82H756v-38h-46.67V-606H756v-38h-84.67v203.33ZM280-213.33q-27 0-46.83-19.84Q213.33-253 213.33-280v-533.33q0-27 19.84-46.84Q253-880 280-880h533.33q27 0 46.84 19.83Q880-840.33 880-813.33V-280q0 27-19.83 46.83-19.84 19.84-46.84 19.84H280Zm0-66.67h533.33v-533.33H280V-280ZM146.67-80q-27 0-46.84-19.83Q80-119.67 80-146.67v-600h66.67v600h600V-80h-600ZM280-813.33V-280v-533.33Z"/></svg>
+                        </a>
+                        <a href="{{ url_for('static', filename='docs/docs.pdf') }}" download="lamba_chapter1.pdf">
+                            <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="border h-96 border-gray-600 p-7 flex flex-col justify-between">
+                    <h1 class="text-2xl">Chapter 03</h1>
+                    <h2 class="text-xl">Methodology</h2>
+                    <p class="dark:text-gray-300">Chapter 3 explains how the study was conducted, ensuring the methodology is appropriate for answering the research questions. It justifies the choices made in research design, data collection, and analysis, ensuring the study's validity and reliability.</p>
+                    <div class="flex items-center gap-x-3">
+                        <a href="{{ url_for('static', filename='docs/docs.pdf') }}" target="_blank">
+                            <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M340.67-440.67h38v-82H424q16.15 0 27.07-10.92Q462-544.52 462-560.67V-606q0-16.15-10.93-27.07Q440.15-644 424-644h-83.33v203.33Zm38-120V-606H424v45.33h-45.33Zm126 120h82.66q15.67 0 26.84-10.92 11.16-10.93 11.16-27.08V-606q0-16.15-11.16-27.07Q603-644 587.33-644h-82.66v203.33Zm38-38V-606h44.66v127.33h-44.66Zm128.66 38h38v-82H756v-38h-46.67V-606H756v-38h-84.67v203.33ZM280-213.33q-27 0-46.83-19.84Q213.33-253 213.33-280v-533.33q0-27 19.84-46.84Q253-880 280-880h533.33q27 0 46.84 19.83Q880-840.33 880-813.33V-280q0 27-19.83 46.83-19.84 19.84-46.84 19.84H280Zm0-66.67h533.33v-533.33H280V-280ZM146.67-80q-27 0-46.84-19.83Q80-119.67 80-146.67v-600h66.67v600h600V-80h-600ZM280-813.33V-280v-533.33Z"/></svg>
+                        </a>
+                        <a href="{{ url_for('static', filename='docs/docs.pdf') }}" download="lamba_chapter1.pdf">
+                            <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="border border-t-0 h-96 border-gray-600 p-7 flex flex-col justify-between">
+                    <h1 class="text-2xl">Chapter 04</h1>
+                    <h2 class="text-xl">Results and Discussion</h2>
+                    <p class="dark:text-gray-300">Chapter 4 presents and interprets the research findings, linking them back to the research questions and objectives. It helps readers understand the significance of the results and how they contribute to the broader field of study.</p>
+                    <div class="flex items-center gap-x-3">
+                        <a href="{{ url_for('static', filename='docs/docs.pdf') }}" target="_blank">
+                            <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M340.67-440.67h38v-82H424q16.15 0 27.07-10.92Q462-544.52 462-560.67V-606q0-16.15-10.93-27.07Q440.15-644 424-644h-83.33v203.33Zm38-120V-606H424v45.33h-45.33Zm126 120h82.66q15.67 0 26.84-10.92 11.16-10.93 11.16-27.08V-606q0-16.15-11.16-27.07Q603-644 587.33-644h-82.66v203.33Zm38-38V-606h44.66v127.33h-44.66Zm128.66 38h38v-82H756v-38h-46.67V-606H756v-38h-84.67v203.33ZM280-213.33q-27 0-46.83-19.84Q213.33-253 213.33-280v-533.33q0-27 19.84-46.84Q253-880 280-880h533.33q27 0 46.84 19.83Q880-840.33 880-813.33V-280q0 27-19.83 46.83-19.84 19.84-46.84 19.84H280Zm0-66.67h533.33v-533.33H280V-280ZM146.67-80q-27 0-46.84-19.83Q80-119.67 80-146.67v-600h66.67v600h600V-80h-600ZM280-813.33V-280v-533.33Z"/></svg>
+                        </a>
+                        <a href="{{ url_for('static', filename='docs/docs.pdf') }}" download="lamba_chapter1.pdf">
+                            <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="border border-t-0 h-96 border-gray-600 p-7 flex flex-col justify-between">
+                    <h1 class="text-2xl">Chapter 05</h1>
+                    <h2 class="text-xl">Conclusion and Recommendations</h2>
+                    <p class="dark:text-gray-300">Chapter 5 wraps up the study by summarizing the results and providing conclusions. It offers actionable recommendations based on the research findings and suggests directions for future work.</p>
+                    <div class="flex items-center gap-x-3">
+                        <a href="{{ url_for('static', filename='docs/docs.pdf') }}" target="_blank">
+                            <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M340.67-440.67h38v-82H424q16.15 0 27.07-10.92Q462-544.52 462-560.67V-606q0-16.15-10.93-27.07Q440.15-644 424-644h-83.33v203.33Zm38-120V-606H424v45.33h-45.33Zm126 120h82.66q15.67 0 26.84-10.92 11.16-10.93 11.16-27.08V-606q0-16.15-11.16-27.07Q603-644 587.33-644h-82.66v203.33Zm38-38V-606h44.66v127.33h-44.66Zm128.66 38h38v-82H756v-38h-46.67V-606H756v-38h-84.67v203.33ZM280-213.33q-27 0-46.83-19.84Q213.33-253 213.33-280v-533.33q0-27 19.84-46.84Q253-880 280-880h533.33q27 0 46.84 19.83Q880-840.33 880-813.33V-280q0 27-19.83 46.83-19.84 19.84-46.84 19.84H280Zm0-66.67h533.33v-533.33H280V-280ZM146.67-80q-27 0-46.84-19.83Q80-119.67 80-146.67v-600h66.67v600h600V-80h-600ZM280-813.33V-280v-533.33Z"/></svg>
+                        </a>
+                        <a href="{{ url_for('static', filename='docs/docs.pdf') }}" download="lamba_chapter1.pdf">
+                            <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="border border-t-0 h-96 border-gray-600 p-7 flex flex-col justify-between">
+                    <h2 class="text-2xl">Appendices</h2>
+                    <p class="dark:text-gray-300">The appendices provide a comprehensive set of supplementary materials that support and clarify the study's methods, data, and findings. They ensure transparency and allow readers to access additional information if needed, without cluttering the main text of the capstone project.</p>
+                    <div class="flex items-center gap-x-3">
+                        <a href="{{ url_for('static', filename='docs/docs.pdf') }}" target="_blank">
+                            <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M340.67-440.67h38v-82H424q16.15 0 27.07-10.92Q462-544.52 462-560.67V-606q0-16.15-10.93-27.07Q440.15-644 424-644h-83.33v203.33Zm38-120V-606H424v45.33h-45.33Zm126 120h82.66q15.67 0 26.84-10.92 11.16-10.93 11.16-27.08V-606q0-16.15-11.16-27.07Q603-644 587.33-644h-82.66v203.33Zm38-38V-606h44.66v127.33h-44.66Zm128.66 38h38v-82H756v-38h-46.67V-606H756v-38h-84.67v203.33ZM280-213.33q-27 0-46.83-19.84Q213.33-253 213.33-280v-533.33q0-27 19.84-46.84Q253-880 280-880h533.33q27 0 46.84 19.83Q880-840.33 880-813.33V-280q0 27-19.83 46.83-19.84 19.84-46.84 19.84H280Zm0-66.67h533.33v-533.33H280V-280ZM146.67-80q-27 0-46.84-19.83Q80-119.67 80-146.67v-600h66.67v600h600V-80h-600ZM280-813.33V-280v-533.33Z"/></svg>
+                        </a>
+                        <a href="{{ url_for('static', filename='docs/docs.pdf') }}" download="lamba_chapter1.pdf">
+                            <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block script %}
+<script>
+
+</script>
+{% endblock %}
