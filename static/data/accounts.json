@@ -1,0 +1,22 @@
+[
+    {
+        "role": "Admin",
+        "email": "nopsscea.admin@nopsscea.com",
+        "password": "nopssceaadmin"
+    },
+    {
+        "role": "School",
+        "email": "stiwnu.registrar@wnu.sti.edu.ph",
+        "password": "123456789"
+    },
+    {
+        "role": "Coach",
+        "email": "avajoyhunt@gmail.com",
+        "password": "123456789ABC"
+    },
+    {
+        "role": "Athlete",
+        "email": "rolandocuenca@gmail.com",
+        "password": "123456789"
+    }
+]

@@ -37,30 +37,63 @@
             </div>
            {% endfor %}
         </div>
-    <!-- <div class="py-10 w-full flex flex-col gap-y-10 font-roboto-mono dark:text-gray-300">
-        <h1 class="text-center text-4xl">System Overview</h1>
-        <div class="flex flex-col gap-y-10">
-            <div class="flex">
-                <div class="w-2/5 space-y-3">
-                    <h1 class="text-xl font-bold tracking-wide">Events lists</h1>
-                    <hr class="border-gray-600 w-5/6">
-                    <p class="w-5/6 text-sm text-gray-400 font-semibold">This is the Sports Events List module for the NOPSSCEA Seasonal Games, showcasing the upcoming seasons and their associated events. The cards represent different seasons of the NOPSSCEA Opening Ceremonies, including the season number, event dates, and a brief description of each event. The Add Event button at the top allows administrators to add new events to the list. Each event card features a "Details" button, which can be clicked to view more information about the event. The module provides an easy-to-navigate interface for managing events and keeping users up-to-date with the latest sports seasons in the NOPSSCEA calendar.</p>
-                </div>
-                <div class="border rounded-xl shadow-white overflow-hidden w-3/5">
-                    <img src="{{ url_for('static', filename='images/events.png') }}" alt="events image w-full aspect-square">
-                </div>
-            </div>
-            <div class="flex gap-x-5">
-                <div class="border rounded-xl shadow-white overflow-hidden w-3/5">
-                    <img src="{{ url_for('static', filename='images/eventDetails.png') }}" alt="events image w-full aspect-square">
-                </div>
-                <div class="w-2/5 space-y-3">
-                    <h1 class="text-xl font-bold tracking-wide">Event Details</h1>
-                    <hr class="border-gray-600 w-5/6">
-                    <p class="w-5/6 text-sm text-gray-400 font-semibold">This is the Sports Events List module for the NOPSSCEA Seasonal Games, showcasing the upcoming seasons and their associated events. The cards represent different seasons of the NOPSSCEA Opening Ceremonies, including the season number, event dates, and a brief description of each event. The Add Event button at the top allows administrators to add new events to the list. Each event card features a "Details" button, which can be clicked to view more information about the event. The module provides an easy-to-navigate interface for managing events and keeping users up-to-date with the latest sports seasons in the NOPSSCEA calendar.</p>
-                </div>
-            </div>
-        </div> -->
+        <br>
+        <h1 class="text-center text-4xl">Evaluation of the System</h1>
+        <div>
+            <table class="w-full">
+                <thead class="border-y">
+                    <tr>
+                        <th class="w-1/3 py-2">Usability</th>
+                        <th class="w-1/3 py-2">Mean Score</th>
+                        <th class="w-1/3 py-2">Interpretation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-1">Appropriateness</td>
+                        <td class="text-center py-1">4.84</td>
+                        <td class="text-center py-1">Excellent</td>
+                    </tr>
+                    <tr>
+                        <td>Recognizability</td>
+                        <td class="text-center py-1">4.84</td>
+                        <td class="text-center py-1">Excellent</td>
+                    </tr>
+                    <tr>
+                        <td>Learnability</td>
+                        <td class="text-center py-1">4.92</td>
+                        <td class="text-center py-1">Excellent</td>
+                    </tr>
+                    <tr>
+                        <td>Operability</td>
+                        <td class="text-center py-1">4.68</td>
+                        <td class="text-center py-1">Excellent</td>
+                    </tr>
+                    <tr>
+                        <td>User Error Protection</td>
+                        <td class="text-center py-1">4.72</td>
+                        <td class="text-center py-1">Excellent</td>
+                    </tr>
+                    <tr>
+                        <td>User Interface Aesthetics</td>
+                        <td class="text-center py-1">4.8</td>
+                        <td class="text-center py-1">Excellent</td>
+                    </tr>
+                    <tr>
+                        <td>Accessibility</td>
+                        <td class="text-center py-1">4.68</td>
+                        <td class="text-center py-1">Excellent</td>
+                    </tr>
+                </tbody>
+                <tfoot class="border-y">
+                    <tr>
+                        <td class="py-2">Total Score/ Mean Score</td>
+                        <td class="py-2">4.78</td>
+                        <td class="py-2">Excellent</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
     </div>
 {% endblock %}
 
