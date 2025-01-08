@@ -5,110 +5,38 @@
         <div class="space-y-20 w-full">
             <h1 class="text-5xl capitalize">Demonstration Video</h1>
             <p class="text-lg">Watch our videos to see how the system works. Learn about key features and how to use them step by step.</p>
-            <div class="flex flex-wrap gap-5">
-                <div
-                class="bg-gray-100 w-[300px] rounded-[30px] flex flex-col justify-center hover:shadow-lg min-h-[280px] dark:bg-neutral-800 dark:text-white items-start relative group"
-                >
-                <div class="m-5">
-                    <div
-                    class="w-12 h-12 flex items-center justify-center absolute inset-x-0 top-0 ml-6 mt-6"
-                    >
-                    <svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 -960 960 960" width="97px" fill="#e8eaed"><path d="M400-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM80-160v-112q0-33 17-62t47-44q51-26 115-44t141-18h14q6 0 12 2-8 18-13.5 37.5T404-360h-4q-71 0-127.5 18T180-306q-9 5-14.5 14t-5.5 20v32h252q6 21 16 41.5t22 38.5H80Zm560 40-12-60q-12-5-22.5-10.5T584-204l-58 18-40-68 46-40q-2-14-2-26t2-26l-46-40 40-68 58 18q11-8 21.5-13.5T628-460l12-60h80l12 60q12 5 22.5 11t21.5 15l58-20 40 70-46 40q2 12 2 25t-2 25l46 40-40 68-58-18q-11 8-21.5 13.5T732-180l-12 60h-80Zm40-120q33 0 56.5-23.5T760-320q0-33-23.5-56.5T680-400q-33 0-56.5 23.5T600-320q0 33 23.5 56.5T680-240ZM400-560q33 0 56.5-23.5T480-640q0-33-23.5-56.5T400-720q-33 0-56.5 23.5T320-640q0 33 23.5 56.5T400-560Zm0-80Zm12 400Z"/></svg>
-                    </div>
-                    <div class="mt-4 text-left w-full mb-3">
-                    <h2 class="text-2xl roboto-mono-500 text-gray-800 dark:text-white">
-                        Admin Side
-                    </h2>
-                    <p class="mt-2 text-sm text-gray-500 dark:text-gray-300">
-                        This demo showcases the admin side of the system, providing tools for managing schools, events, schedules and medals.
-                    </p>
-                    </div>
-                    <button onclick="showModal('admindemo.mp4')">
-                        <div
-                            class="bg-gray-300 dark:bg-gray-700 w-10 h-10 rounded-full absolute bottom-0 left-0 m-4 flex justify-center items-center hover:ring-4 ring-gray-200 dark:ring-gray-400 hover:transition duration-700 ease-in-out"
-                        >
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z"/></svg>
-                        </div>
+            <div class="grid grid-cols-4 gap-5">
+                <div class="p-5 rounded-xl bg-neutral-800 flex flex-col gap-y-2 justify-between">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="93px" viewBox="0 -960 960 960" width="90px" fill="#e8eaed"><path d="M400-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM80-160v-112q0-33 17-62t47-44q51-26 115-44t141-18h14q6 0 12 2-8 18-13.5 37.5T404-360h-4q-71 0-127.5 18T180-306q-9 5-14.5 14t-5.5 20v32h252q6 21 16 41.5t22 38.5H80Zm560 40-12-60q-12-5-22.5-10.5T584-204l-58 18-40-68 46-40q-2-14-2-26t2-26l-46-40 40-68 58 18q11-8 21.5-13.5T628-460l12-60h80l12 60q12 5 22.5 11t21.5 15l58-20 40 70-46 40q2 12 2 25t-2 25l46 40-40 68-58-18q-11 8-21.5 13.5T732-180l-12 60h-80Zm40-120q33 0 56.5-23.5T760-320q0-33-23.5-56.5T680-400q-33 0-56.5 23.5T600-320q0 33 23.5 56.5T680-240ZM400-560q33 0 56.5-23.5T480-640q0-33-23.5-56.5T400-720q-33 0-56.5 23.5T320-640q0 33 23.5 56.5T400-560Zm0-80Zm12 400Z"/></svg>
+                    <h1 class="text-xl font-bold">Admin Side</h1>
+                    <p>This demo showcases the admin side of the system, providing tools for managing schools, events, schedules and medals.</p>
+                    <button class="rounded-full cursor-pointer border w-fit hover:outline p-1 hover:outline-gray-600" onclick="showModal('admindemo.mp4')">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z"/></svg>
                     </button>
                 </div>
-                </div>
-                <div
-                class="bg-gray-100 w-[300px] rounded-[30px] flex flex-col justify-center hover:shadow-lg min-h-[280px] dark:bg-neutral-800 dark:text-white items-start relative group"
-                >
-                <div class="m-5">
-                    <div
-                    class="w-12 h-12 flex items-center justify-center absolute inset-x-0 top-0 ml-6 mt-6"
-                    >
-                    <svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 -960 960 960" width="97px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
-                    </div>
-                    <div class="mt-4 text-left w-full mb-3">
-                    <h2 class="text-2xl roboto-mono-500 text-gray-800 dark:text-white">
-                        School Side
-                    </h2>
-                    <p class="mt-2 text-sm text-gray-500 dark:text-gray-300">
-                        This demo showcases the school side of the system, providing tools for managing athletes, coach, and joining of events.
-                    </p>
-                    </div>
-                    <button onclick="showModal('admindemo.mp4')">
-                        <div
-                            class="bg-gray-300 dark:bg-gray-700 w-10 h-10 rounded-full absolute bottom-0 left-0 m-4 flex justify-center items-center hover:ring-4 ring-gray-200 dark:ring-gray-400 hover:transition duration-700 ease-in-out"
-                        >
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z"/></svg>
-                        </div>
+                <div class="p-5 rounded-xl bg-neutral-800 flex flex-col gap-y-2 justify-between">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="93px" viewBox="0 -960 960 960" width="90px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+                    <h1 class="text-xl font-bold">School Side</h1>
+                    <p>This demo showcases the school side of the system, providing tools for managing athletes, coach, and joining of events.</p>
+                    <button class="rounded-full cursor-pointer border w-fit hover:outline p-1 hover:outline-gray-600" onclick="showModal('admindemo.mp4')">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z"/></svg>
                     </button>
                 </div>
-                </div>
-                <div
-                class="bg-gray-100 w-[300px] rounded-[30px] flex flex-col justify-center hover:shadow-lg min-h-[280px] dark:bg-neutral-800 dark:text-white items-start relative group"
-                >
-                <div class="m-5">
-                    <div
-                    class="w-12 h-12 flex items-center justify-center absolute inset-x-0 top-0 ml-6 mt-6"
-                    >
-                    <svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 -960 960 960" width="97px" fill="#e8eaed"><path d="M440-200q-100 0-170-70t-70-170q0-11 1-22t3-22q-5 2-12 3t-12 1q-42 0-71-29t-29-71q0-42 27.5-71t69.5-29q33 0 59.5 18.5T274-614q33-30 75.5-48t90.5-18h440v160H680v80q0 100-70 170t-170 70ZM180-540q17 0 28.5-11.5T220-580q0-17-11.5-28.5T180-620q-17 0-28.5 11.5T140-580q0 17 11.5 28.5T180-540Zm260 240q58 0 99-41t41-99q0-58-41-99t-99-41q-58 0-99 41t-41 99q0 58 41 99t99 41Zm0-60q33 0 56.5-23.5T520-440q0-33-23.5-56.5T440-520q-33 0-56.5 23.5T360-440q0 33 23.5 56.5T440-360Zm0-80Z"/></svg>
-                    </div>
-                    <div class="mt-4 text-left w-full mb-3">
-                    <h2 class="text-2xl roboto-mono-500 text-gray-800 dark:text-white">
-                        Coach Side
-                    </h2>
-                    <p class="mt-2 text-sm text-gray-500 dark:text-gray-300">
-                        This demo showcases the coach side of the system, providing tools for managing athletes and training sessions.
-                    </p>
-                    </div>
-                    <button onclick="showModal('admindemo.mp4')">
-                        <div
-                            class="bg-gray-300 dark:bg-gray-700 w-10 h-10 rounded-full absolute bottom-0 left-0 m-4 flex justify-center items-center hover:ring-4 ring-gray-200 dark:ring-gray-400 hover:transition duration-700 ease-in-out"
-                        >
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z"/></svg>
-                        </div>
+                <div class="p-5 rounded-xl bg-neutral-800 flex flex-col gap-y-2 justify-between">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="93px" viewBox="0 -960 960 960" width="90px" fill="#e8eaed"><path d="M440-200q-100 0-170-70t-70-170q0-11 1-22t3-22q-5 2-12 3t-12 1q-42 0-71-29t-29-71q0-42 27.5-71t69.5-29q33 0 59.5 18.5T274-614q33-30 75.5-48t90.5-18h440v160H680v80q0 100-70 170t-170 70ZM180-540q17 0 28.5-11.5T220-580q0-17-11.5-28.5T180-620q-17 0-28.5 11.5T140-580q0 17 11.5 28.5T180-540Zm260 240q58 0 99-41t41-99q0-58-41-99t-99-41q-58 0-99 41t-41 99q0 58 41 99t99 41Zm0-60q33 0 56.5-23.5T520-440q0-33-23.5-56.5T440-520q-33 0-56.5 23.5T360-440q0 33 23.5 56.5T440-360Zm0-80Z"/></svg>
+                    <h1 class="text-xl font-bold">Coach Side</h1>
+                    <p>This demo showcases the coach side of the system, providing tools for managing athletes and training sessions.</p>
+                    <button class="rounded-full cursor-pointer border w-fit hover:outline p-1 hover:outline-gray-600" onclick="showModal('admindemo.mp4')">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z"/></svg>
                     </button>
                 </div>
-                </div>
-                <div
-                class="bg-gray-100 w-[300px] rounded-[30px] flex flex-col justify-center hover:shadow-lg min-h-[280px] dark:bg-neutral-800 dark:text-white items-start relative group"
-                >
-                <div class="m-5">
-                    <div
-                    class="w-12 h-12 flex items-center justify-center absolute inset-x-0 top-0 ml-6 mt-6"
-                    >
-                    <svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 -960 960 960" width="97px" fill="#e8eaed"><path d="m368-4-70-40 120-208-68-40-60 104-70-40 206-356q-38-39-57-89t-19-103q0-36 9-71.5t29-68.5l68 40q-14 23-20 47.5t-6 50.5q0 53 26 99.5t74 74.5l90 52q62 36 91 103.5T740-322q0 38-10 74t-28 68l-70-40q14-24 20-49t6-51q0-32-9-62t-29-56L368-4Zm272-596q-33 0-56.5-23.5T560-680q0-33 23.5-56.5T640-760q33 0 56.5 23.5T720-680q0 33-23.5 56.5T640-600ZM540-800q-26 0-43-18t-17-42q0-26 18-43t42-17q26 0 43 18t17 42q0 26-18 43t-42 17Z"/></svg>
-                    </div>
-                    <div class="mt-4 text-left w-full mb-3">
-                    <h2 class="text-2xl roboto-mono-500 text-gray-800 dark:text-white">
-                        Athlete Side
-                    </h2>
-                    <p class="mt-2 text-sm text-gray-500 dark:text-gray-300">
-                        This demo showcases the athlete side of the system, providing tools for managing documents, forms, and certificates.
-                    </p>
-                    </div>
-                    <button onclick="showModal('admindemo.mp4')">
-                        <div
-                            class="bg-gray-300 dark:bg-gray-700 w-10 h-10 rounded-full absolute bottom-0 left-0 m-4 flex justify-center items-center hover:ring-4 ring-gray-200 dark:ring-gray-400 hover:transition duration-700 ease-in-out"
-                        >
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z"/></svg>
-                        </div>
+                <div class="p-5 rounded-xl bg-neutral-800 flex flex-col gap-y-2 justify-between">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="93px" viewBox="0 -960 960 960" width="90px" fill="#e8eaed"><path d="m368-4-70-40 120-208-68-40-60 104-70-40 206-356q-38-39-57-89t-19-103q0-36 9-71.5t29-68.5l68 40q-14 23-20 47.5t-6 50.5q0 53 26 99.5t74 74.5l90 52q62 36 91 103.5T740-322q0 38-10 74t-28 68l-70-40q14-24 20-49t6-51q0-32-9-62t-29-56L368-4Zm272-596q-33 0-56.5-23.5T560-680q0-33 23.5-56.5T640-760q33 0 56.5 23.5T720-680q0 33-23.5 56.5T640-600ZM540-800q-26 0-43-18t-17-42q0-26 18-43t42-17q26 0 43 18t17 42q0 26-18 43t-42 17Z"/></svg>
+                    <h1 class="text-xl font-bold">Athlete Side</h1>
+                    <p>This demo showcases the athlete side of the system, providing tools for managing documents, forms, and certificates.</p>
+                    <button class="rounded-full cursor-pointer border w-fit hover:outline p-1 hover:outline-gray-600" onclick="showModal('admindemo.mp4')">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z"/></svg>
                     </button>
-                </div>
                 </div>
             </div>
         </div>
